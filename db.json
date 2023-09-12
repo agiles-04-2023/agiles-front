@@ -1,0 +1,632 @@
+{
+  "users": [
+    {
+      "email": "",
+      "password": "",
+      "fullName": "",
+      "photo": "",
+      "id": 4
+    },
+    {
+      "email": "",
+      "password": "",
+      "fullName": "",
+      "photo": "",
+      "id": 5
+    },
+    {
+      "email": "",
+      "password": "",
+      "fullName": "",
+      "photo": "",
+      "id": 6
+    }
+  ],
+  "games": [
+    {
+      "MAX_INTENTOS": 8,
+      "TIMER": 60,
+      "nivel": "dificil",
+      "intentos": 8,
+      "palabraUsuario": [
+        "l",
+        "e",
+        "o"
+      ],
+      "letrasErradas": [],
+      "palabraAdivinar": "leo",
+      "allInputs": [
+        "l",
+        "e",
+        "o"
+      ],
+      "userId": 4,
+      "finalState": "Ganaste",
+      "time": 60,
+      "withTimer": false,
+      "date": "2023-07-02T22:49:39.383Z",
+      "id": 1
+    },
+    {
+      "MAX_INTENTOS": 8,
+      "TIMER": 60,
+      "nivel": "facil",
+      "intentos": 5,
+      "palabraUsuario": [
+        "f",
+        "a",
+        "c",
+        "i",
+        "l"
+      ],
+      "letrasErradas": [
+        "o",
+        "e",
+        "p"
+      ],
+      "palabraAdivinar": "facil",
+      "allInputs": [
+        "a",
+        "l",
+        "c",
+        "o",
+        "e",
+        "p",
+        "f",
+        "i"
+      ],
+      "userId": 4,
+      "finalState": "Ganaste",
+      "time": 32,
+      "withTimer": true,
+      "date": "2023-07-02T22:52:48.375Z",
+      "id": 2
+    },
+    {
+      "MAX_INTENTOS": 8,
+      "TIMER": 60,
+      "nivel": "facil",
+      "intentos": 1,
+      "palabraUsuario": [
+        "i",
+        null,
+        "o"
+      ],
+      "letrasErradas": [
+        "l",
+        "u",
+        "c",
+        "a",
+        "f",
+        "e",
+        "t",
+        "y"
+      ],
+      "palabraAdivinar": "jose",
+      "allInputs": [
+        "l",
+        "u",
+        "c",
+        "a",
+        "f",
+        "i",
+        "e",
+        "t",
+        "o",
+        "y"
+      ],
+      "userId": 4,
+      "finalState": "Perdiste",
+      "time": 60,
+      "withTimer": false,
+      "date": "2023-07-02T22:53:26.295Z",
+      "id": 3
+    },
+    {
+      "MAX_INTENTOS": 8,
+      "TIMER": 60,
+      "nivel": "facil",
+      "intentos": 4,
+      "palabraUsuario": [
+        "m",
+        "a",
+        "m",
+        "a"
+      ],
+      "letrasErradas": [
+        "w",
+        "h",
+        "c",
+        "s"
+      ],
+      "palabraAdivinar": "mama",
+      "allInputs": [
+        "w",
+        "h",
+        "a",
+        "c",
+        "s",
+        "m"
+      ],
+      "userId": 5,
+      "finalState": "Ganaste",
+      "time": 15,
+      "withTimer": true,
+      "date": "2023-07-02T23:33:57.774Z",
+      "id": 4
+    },
+    {
+      "MAX_INTENTOS": 8,
+      "TIMER": 60,
+      "nivel": "facil",
+      "intentos": 1,
+      "palabraUsuario": [
+        "c",
+        null,
+        "s"
+      ],
+      "letrasErradas": [
+        "k",
+        "l",
+        "m",
+        "t",
+        "g",
+        "i",
+        "h",
+        "p"
+      ],
+      "palabraAdivinar": "casa",
+      "allInputs": [
+        "k",
+        "l",
+        "s",
+        "m",
+        "t",
+        "g",
+        "c",
+        "i",
+        "h",
+        "p"
+      ],
+      "userId": 5,
+      "finalState": "Perdiste",
+      "time": 60,
+      "withTimer": false,
+      "date": "2023-07-02T23:39:27.577Z",
+      "id": 5
+    },
+    {
+      "MAX_INTENTOS": 8,
+      "TIMER": 60,
+      "nivel": "facil",
+      "intentos": 2,
+      "palabraUsuario": [
+        "c",
+        "a",
+        "r",
+        "a"
+      ],
+      "letrasErradas": [
+        "u",
+        "l",
+        "i",
+        "s",
+        "j",
+        "m"
+      ],
+      "palabraAdivinar": "cara",
+      "allInputs": [
+        "u",
+        "l",
+        "i",
+        "a",
+        "c",
+        "s",
+        "j",
+        "m",
+        "r"
+      ],
+      "finalState": "Ganaste",
+      "time": 56,
+      "withTimer": true,
+      "date": "2023-07-03T19:46:52.719Z",
+      "id": 6
+    },
+    {
+      "MAX_INTENTOS": 8,
+      "TIMER": 145,
+      "nivel": "medio",
+      "intentos": 4,
+      "palabraUsuario": [
+        "f",
+        "a",
+        "n",
+        "t",
+        "a",
+        "s",
+        "m",
+        "a"
+      ],
+      "letrasErradas": [
+        "i",
+        "r",
+        "c",
+        "l"
+      ],
+      "palabraAdivinar": "fantasma",
+      "allInputs": [
+        "a",
+        "f",
+        "s",
+        "i",
+        "r",
+        "c",
+        "l",
+        "n",
+        "t",
+        "m"
+      ],
+      "userId": 5,
+      "finalState": "Ganaste",
+      "time": 145,
+      "withTimer": false,
+      "date": "2023-07-03T20:11:42.120Z",
+      "id": 7
+    },
+    {
+      "MAX_INTENTOS": 8,
+      "TIMER": 240,
+      "nivel": "dificil",
+      "intentos": 1,
+      "palabraUsuario": [
+        null,
+        "n",
+        "c",
+        "o",
+        "m",
+        "u",
+        "n",
+        "i",
+        "c",
+        "a",
+        "c",
+        "i",
+        null,
+        "n"
+      ],
+      "letrasErradas": [
+        "p",
+        "q",
+        "l",
+        "e",
+        "h",
+        "s",
+        "w",
+        "j"
+      ],
+      "palabraAdivinar": "Incomunicación",
+      "allInputs": [
+        "a",
+        "c",
+        "p",
+        "q",
+        "l",
+        "e",
+        "h",
+        "i",
+        "u",
+        "n",
+        "o",
+        "s",
+        "m",
+        "w",
+        "j"
+      ],
+      "userId": 5,
+      "finalState": "Perdiste",
+      "time": 240,
+      "withTimer": false,
+      "date": "2023-07-03T20:12:49.875Z",
+      "id": 8
+    },
+    {
+      "MAX_INTENTOS": 8,
+      "TIMER": 60,
+      "nivel": "facil",
+      "intentos": 1,
+      "palabraUsuario": [
+        "c",
+        "a",
+        "r",
+        "a"
+      ],
+      "letrasErradas": [
+        "s",
+        "e",
+        "q",
+        "m",
+        "s",
+        "p",
+        "j"
+      ],
+      "palabraAdivinar": "cara",
+      "allInputs": [
+        "a",
+        "s",
+        "e",
+        "q",
+        "m",
+        "c",
+        "s",
+        "p",
+        "j",
+        "r"
+      ],
+      "finalState": "Ganaste",
+      "time": 60,
+      "withTimer": false,
+      "date": "2023-07-09T15:51:21.565Z",
+      "id": 9
+    },
+    {
+      "MAX_INTENTOS": 8,
+      "TIMER": 60,
+      "nivel": "facil",
+      "intentos": 0,
+      "palabraUsuario": [],
+      "letrasErradas": [
+        "d",
+        "g",
+        "d",
+        "f",
+        "g",
+        "g",
+        "d",
+        "d"
+      ],
+      "palabraAdivinar": "perro",
+      "allInputs": [
+        "d",
+        "g",
+        "d",
+        "f",
+        "g",
+        "g",
+        "d",
+        "d"
+      ],
+      "finalState": "Perdiste",
+      "time": 60,
+      "withTimer": false,
+      "date": "2023-07-09T16:11:48.739Z",
+      "id": 10
+    },
+    {
+      "MAX_INTENTOS": 8,
+      "TIMER": 60,
+      "nivel": "facil",
+      "intentos": 1,
+      "palabraUsuario": [
+        "c"
+      ],
+      "letrasErradas": [
+        "g",
+        "h",
+        "d",
+        "j",
+        "i",
+        "n",
+        "r",
+        "w"
+      ],
+      "palabraAdivinar": "casa",
+      "allInputs": [
+        "g",
+        "h",
+        "c",
+        "d",
+        "j",
+        "i",
+        "n",
+        "r",
+        "w"
+      ],
+      "finalState": "Perdiste",
+      "time": 60,
+      "withTimer": false,
+      "date": "2023-07-09T16:12:38.589Z",
+      "id": 11
+    },
+    {
+      "MAX_INTENTOS": 8,
+      "TIMER": 60,
+      "nivel": "facil",
+      "intentos": 1,
+      "palabraUsuario": [
+        "c",
+        "a",
+        null,
+        "a"
+      ],
+      "letrasErradas": [
+        "i",
+        "h",
+        "d",
+        "g",
+        "h",
+        "h",
+        "h",
+        "h"
+      ],
+      "palabraAdivinar": "cara",
+      "allInputs": [
+        "a",
+        "i",
+        "h",
+        "d",
+        "c",
+        "g",
+        "h",
+        "h",
+        "h",
+        "h"
+      ],
+      "finalState": "Perdiste",
+      "time": 60,
+      "withTimer": false,
+      "date": "2023-07-09T16:26:22.166Z",
+      "id": 12
+    },
+    {
+      "MAX_INTENTOS": 8,
+      "TIMER": 60,
+      "nivel": "facil",
+      "intentos": 5,
+      "palabraUsuario": [
+        "p",
+        "a",
+        "p",
+        "a"
+      ],
+      "letrasErradas": [
+        "o",
+        "s",
+        "y"
+      ],
+      "palabraAdivinar": "papa",
+      "allInputs": [
+        "a",
+        "o",
+        "a",
+        "s",
+        "y",
+        "p"
+      ],
+      "finalState": "Ganaste",
+      "time": 60,
+      "withTimer": false,
+      "date": "2023-07-09T16:33:11.575Z",
+      "id": 13
+    },
+    {
+      "MAX_INTENTOS": 8,
+      "TIMER": 60,
+      "nivel": "facil",
+      "intentos": 6,
+      "palabraUsuario": [
+        "m",
+        "a",
+        "m",
+        "a"
+      ],
+      "letrasErradas": [
+        "p",
+        "g"
+      ],
+      "palabraAdivinar": "mama",
+      "allInputs": [
+        "p",
+        "a",
+        "g",
+        "m"
+      ],
+      "userId": 4,
+      "finalState": "Ganaste",
+      "time": 60,
+      "withTimer": false,
+      "date": "2023-07-17T19:46:45.990Z",
+      "id": 14
+    },
+    {
+      "MAX_INTENTOS": 8,
+      "TIMER": 240,
+      "nivel": "dificil",
+      "intentos": 1,
+      "palabraUsuario": [
+        null,
+        "e",
+        "s",
+        "e",
+        "s",
+        null,
+        "e",
+        "r",
+        "a",
+        "d",
+        "a",
+        "m",
+        "e",
+        "n",
+        null,
+        "e"
+      ],
+      "letrasErradas": [
+        "c",
+        "o",
+        "i",
+        "l",
+        "u",
+        "f",
+        "b",
+        "j"
+      ],
+      "palabraAdivinar": "Desesperadamente",
+      "allInputs": [
+        "s",
+        "c",
+        "a",
+        "o",
+        "i",
+        "e",
+        "l",
+        "n",
+        "m",
+        "r",
+        "u",
+        "f",
+        "d",
+        "b",
+        "j"
+      ],
+      "userId": 4,
+      "finalState": "Perdiste",
+      "time": 51,
+      "withTimer": true,
+      "date": "2023-07-17T19:58:55.266Z",
+      "id": 15
+    },
+    {
+      "MAX_INTENTOS": 8,
+      "TIMER": 60,
+      "nivel": "facil",
+      "intentos": 4,
+      "palabraUsuario": [
+        "c",
+        "a",
+        "s",
+        "a"
+      ],
+      "letrasErradas": [
+        "l",
+        "o",
+        "w",
+        "m"
+      ],
+      "palabraAdivinar": "casa",
+      "allInputs": [
+        "l",
+        "a",
+        "o",
+        "w",
+        "m",
+        "c",
+        "s"
+      ],
+      "finalState": "Ganaste",
+      "time": 60,
+      "withTimer": false,
+      "date": "2023-07-17T20:36:41.644Z",
+      "id": 16
+    }
+  ]
+}
