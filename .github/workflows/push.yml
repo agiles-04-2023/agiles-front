@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [main]
 jobs:
-  compilar:
+  Tests_Compile_Deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -34,7 +34,7 @@ jobs:
             git pull
             yarn
             yarn buildActions 
-            cp -r /root/Lucho/GitHub/Agiles/agiles-front/dist/* /var/www/Lucho-Dev/Agiles
+            cp -r /root/Lucho/GitHub/Agiles/agiles-front/dist/* /var/www/test
           
 
 
