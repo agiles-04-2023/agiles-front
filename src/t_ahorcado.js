@@ -1,3 +1,6 @@
+
+
+
 // create a list of easy work between 5 and 10 letters 
 export const palabrasFaciles = ['cara', 'leo', 'mama', 'papa', 'casa', 'perro', 'gato', 'pato', 'facil', 'ivo']
 // create a list of medium work between 10 and 15 letters
@@ -5,11 +8,22 @@ export const palabrasMedios = ["fantasma", "sandía", "escuela", "montaña", "gu
 // create a list of hard work between 15 and 20 letters
 export const palabrasDificiles = ['Extravagante', 'Inconformes', 'Desconcertado', 'Contradicción', 'Perseverante', 'Establecimiento', 'Espléndidamente', 'Anticonstitucional', 'Desesperadamente', 'Incomunicación'];
 
+
+
+
+
+
+
 export class Ahorcado {
+    // PALABRA_A_ADIVINAR = 'javascript'
+    // palabraUsuario = []
     MAX_INTENTOS = 6
+    // intentos = MAX_INTENTOS
+    // TODO :: implemenmtar timer para que se termine el juego
     TIMER = 60
 
-    constructor(difucultad, val = 1, palabra_recibida = '') {
+    // create a constructor with the parameters
+    constructor(difucultad, val = 1) {
         // this.palabraAdivinar = palabraAdivinar
         // this.palabraUsuario = palabraUsuario
         this.difucultad = difucultad
@@ -17,16 +31,14 @@ export class Ahorcado {
         this.palabraUsuario = []
         this.letrasErradas = []
         if (val === 2) {
-            if (difucultad === 'facil') 
-                this.palabraAdivinar = palabrasFaciles[Math.floor(Math.random() * palabrasFaciles.length)]
-            else if (difucultad === 'medio') 
-                this.palabraAdivinar = palabrasMedios[Math.floor(Math.random() * palabrasMedios.length)]
-            else if (difucultad === 'dificil') 
-                this.palabraAdivinar = palabrasDificiles[Math.floor(Math.random() * palabrasDificiles.length)]
+            if (difucultad === 'facil') this.palabraAdivinar = palabrasFaciles[Math.floor(Math.random() * palabrasFaciles.length)]
+            else if (difucultad === 'medio') this.palabraAdivinar = palabrasMedios[Math.floor(Math.random() * palabrasMedios.length)]
+            else if (difucultad === 'dificil') this.palabraAdivinar = palabrasDificiles[Math.floor(Math.random() * palabrasDificiles.length)]
         } else {
-            if (difucultad === 'facil') this.palabraAdivinar = palabra_recibida
-            else if (difucultad === 'medio') this.palabraAdivinar = palabra_recibida
-            else if (difucultad === 'dificil') this.palabraAdivinar = palabra_recibida
+
+            if (difucultad === 'facil') this.palabraAdivinar = 'java'
+            else if (difucultad === 'medio') this.palabraAdivinar = 'python'
+            else if (difucultad === 'dificil') this.palabraAdivinar = 'javascript'
         }
 
     }

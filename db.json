@@ -1,23 +1,23 @@
 {
   "users": [
     {
-      "email": "",
-      "password": "",
-      "fullName": "",
+      "email": "prod_dev@gmail.com",
+      "password": "Test1234!",
+      "fullName": "JHMesserouxx",
       "photo": "",
       "id": 4
     },
     {
-      "email": "",
-      "password": "",
-      "fullName": "",
-      "photo": "",
+      "email": "mhokamor@gmail.com",
+      "password": "test1234",
+      "fullName": "MHOK",
+      "photo": "https://res.cloudinary.com/draxircbk/image/upload/v1687141107/ATESPIEDSJESUS/USERS/jhmcode_2_admin.png",
       "id": 5
     },
     {
-      "email": "",
-      "password": "",
-      "fullName": "",
+      "email": "test@test.com",
+      "password": "test1234",
+      "fullName": "Test",
       "photo": "",
       "id": 6
     }
@@ -102,7 +102,7 @@
         "t",
         "y"
       ],
-      "palabraAdivinar": "jose",
+      "palabraAdivinar": "ivo",
       "allInputs": [
         "l",
         "u",

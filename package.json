@@ -5,15 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "cypress:open": "cypress open",
-    "test:e2e": "npx cypress run",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "api": "json-server --watch db.json",
-    "cc": "cucumber-js"
+    "test:e2e": "npx cypress run",
+    "cc": "cucumber-js",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@cucumber/cucumber": "^9.2.0",
