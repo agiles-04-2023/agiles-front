@@ -15,23 +15,14 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "18"
-      # - run : cd web
-      # - run: pwd
-      # - run: ls
-      # - run : cd /web
       - run: npm install --no-audit --no-optional --no-fund
-      # - run: yarn dev
       - name : Ejecutar ESLINT para ver errores de codigo...
         run: yarn lint
       - name : Ejecutar los Tests...
         run: |
           yarn test
           yarn coverage
-  deploy:
-    # needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Setup SSH
+      - name: Setup SSH # Aca hago el deploy a mi servidor
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SERVER_HOST }}
