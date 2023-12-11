@@ -11,6 +11,7 @@ export class Ahorcado {
     TIMER = 60
 
     constructor(difucultad, palabraAdivinar = null) {
+        // Si no se pasa palabra a adivinar se elige una aleatoria dependiendo la dificultad
         if (palabraAdivinar) {
             this.palabraAdivinar = palabraAdivinar
         } else {
