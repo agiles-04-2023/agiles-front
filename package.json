@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "api": "json-server --watch db.json",
+    "api": "json-server --watch db.json --port 8000",
     "test:e2e": "npx cypress run",
     "cc": "cucumber-js",
     "cypress:open": "cypress open"
@@ -19,6 +19,7 @@
   "dependencies": {
     "@cucumber/cucumber": "^9.2.0",
     "axios": "^1.4.0",
+    "json-server": "^0.17.4",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
