@@ -56,14 +56,14 @@ const SignIn = () => {
   };
 
   return (
-    <div className="flex h-screen w-screen dark:bg-gray-900 items-center justify-center">
-      <Box className=" w-full max-w-[420px] mx-3 sm:mx-0 sm:w-96 ">
+    <div className="flex h-screen w-screen bg-[#492d49] items-center justify-center">
+      <Box className=" w-full max-w-[420px] mx-3 sm:mx-0 sm:w-96 font-sans">
         <form
           onSubmit={handleSubmitLogin}
           className="flex items-center justify-between flex-col "
         >
 
-          <h3 className="title-form self-start mb-4 !text-xl sm:!text-3xl">Inicia sesión</h3>
+          <h3 className="title-form self-start mb-4 !text-xl sm:!text-3xl">Inicia Sesión</h3>
           {
             message && (
               <div className="bg-red-100 border my-2 border-red-200 text-red-700 px-4 py-3 rounded relative" role="alert">
@@ -78,9 +78,9 @@ const SignIn = () => {
             placeholder="example@gmail.com"
             onChange={(val) => handleInputChange(val, "email")}
             hasError={errors?.email}
-            className="test-email"
+            className="test-email font-sans"
             required
-            label="Email"
+            label="EMAIL"
             errorText="Email obligatorio y válido."
           />
 
@@ -90,10 +90,10 @@ const SignIn = () => {
             placeholder=".lk8Tx9W/"
             onChange={(val) => handleInputChange(val, "password")}
             required
-            label="Contraseña"
+            label="CONTRASEÑA"
             className="test-password"
             hasError={errors?.password}
-            errorText="Contraseña obligatoria ."
+            errorText="Contraseña obligatoria."
           />
 
           <fieldset>
@@ -107,7 +107,7 @@ const SignIn = () => {
                   <InlineDots />
                 </div>
               ) : (
-                <span>Inicia sesión</span>
+                <span>Inicia Sesión</span>
               )}
             </button>
           </fieldset>
@@ -116,24 +116,24 @@ const SignIn = () => {
             <span className="text-sm">
               <Link
                 to="/forget-password"
-                className="text-pink-700 dark:text-slate-500 ml-1 hover:underline  p-1"
+                className="text-[#d1b68d] ml-1 hover:underline font-bold p-1"
               >
                 ¿Olvidaste tu contraseña ?
               </Link>
             </span>
           </div>
           <div className="register-section text-sx my-2">
-            <span> Soy nuevo ? </span>
+            <span> ¿Soy nuevo? </span>
             <span className="text-sm">
               <Link
                 to="/sign-up"
-                className="text-pink-700 dark:text-slate-500 ml-1 hover:underline  p-1"
+                className="text-white font-bold bg-[#ffb13d] rounded-md ml-1 p-1 estiloAnimado"
               >
                 CREAR CUENTA
               </Link>
             </span>
           </div>
-          <Link to='/' className='mt-2 border border-gray-600 w-full text-center px-2 py-1 border-dashed text-slate-400 hover:underline'>&#8592; Volver al inicio</Link>
+          <Link to='/' className='mt-2 border border-gray-600 w-full text-center px-2 py-1 border-dashed text-[#ffb13d] shadow-2xl transition-all duration-300  hover:bg-[#ffb13d] hover:text-white hover:shadow-[#51445f]'>&#8592; Volver al inicio</Link>
 
         </form>
       </Box>

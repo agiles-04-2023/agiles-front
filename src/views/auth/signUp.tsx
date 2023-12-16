@@ -66,7 +66,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="flex h-screen w-screen flex-col dark:bg-gray-900 items-center justify-center">
+    <div className="flex h-screen w-screen flex-col bg-[#492d49] font-sans items-center justify-center">
       <Box className=' w-full sm:w-[360px]  mx-3 sm:mx-0  '>
         <form onSubmit={handleSubmitLogin} className='flex items-center justify-between flex-col '>
           <h3 className='title-form self-start mb-4 !text-xl sm:!text-3xl'>Crear cuenta</h3>
@@ -74,13 +74,13 @@ const SignUp = () => {
           <CustomInput placeholder='Juan Diego'
             name='fullName'
             onChange={(val) => handleInputChange(val, 'fullName')}
-            label='Nombre Completo'
+            label='NOMBRE COMPLETO'
             className='test-fullName'
             hasError={errors?.fullName}
             errorText='El nombre es obligatorio.'
           />
           <CustomInput type='email'
-            label='Email' name='email'
+            label='EMAIL' name='email'
             placeholder='example@gmail.com'
             onChange={(val) => handleInputChange(val, 'email')}
             className='test-email'
@@ -95,7 +95,7 @@ const SignUp = () => {
             onChange={(val) => handleInputChange(val, 'password')}
             hasError={errors?.password}
             errorText='Contraseña obligatoria.'
-            label='Contraseña'
+            label='CONTRASEÑA'
           />
 
           <fieldset>
@@ -104,18 +104,18 @@ const SignUp = () => {
               className='btn gradient' type='submit'>{!loading ? ('Crear cuenta') : 'Espere...'}</button>
           </fieldset>
 
-          <div className="register-section text-sx my-2">
-            <span> Ya tiene cuenta? </span>
+          <div className="register-section text-sx my-2 mt-4">
+            <span className='font-bold'> ¿Ya tiene cuenta? </span>
             <span className="text-sm">
               <Link
                 to="/sign-in"
-                className="text-pink-700 dark:text-slate-500 ml-1 hover:underline  p-1"
+                className="text-white font-bold bg-[#ffb13d] rounded-md ml-1 p-1 estiloAnimado"
               >
                 INICIA SESIÓN
               </Link>
             </span>
           </div>
-          <Link to='/' className='mt-2 border border-gray-600 w-full text-center px-2 py-1 border-dashed text-slate-400 hover:underline'>&#8592; Volver al inicio</Link>
+          <Link to='/' className='mt-2 border border-gray-600 w-full text-center px-2 py-1 border-dashed text-[#ffb13d] shadow-2xl transition-all duration-300  hover:bg-[#ffb13d] hover:text-white hover:shadow-[#51445f]'>&#8592; Volver al inicio</Link>
 
         </form>
       </Box>
