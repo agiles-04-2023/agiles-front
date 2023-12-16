@@ -150,7 +150,7 @@ const Game = () => {
 
 
     return (
-        <div className='flex min-h-screen justify-between flex-col'>
+        <div className='flex min-h-screen justify-between flex-col bg-[#492d49] font-sans'>
             <Navbar />
             {
                 (playing || game !== undefined) ? (
@@ -158,20 +158,20 @@ const Game = () => {
                         {
                             endGame !== '' && (
                                 <div className="modal absolute w-screen h-screen  flex items-center justify-center bg-black/40 text-white z-30">
-                                    <div className="modal-content w-[90%] mx-8 sm:mx-0 sm:w-[350px] bg-slate-700 p-4   shadow rounded">
+                                    <div className="modal-content w-[90%] mx-8 sm:mx-0 sm:w-[350px] bg-[#5a5c75] p-4 shadow rounded">
                                         <div className="modal-header mb-4 border-b border-slate-600 pb-2">
-                                            <h2 className='text-2xl font-meduim'>Fin Juego</h2>
+                                            <h2 className='text-2xl font-meduim font-semibold'>FIN DEL JUEGO</h2>
                                         </div>
                                         <div className="modal-body">
                                             {/* <p>Some text in the Modal Body</p> */}
-                                            <p className={`${endGame === 'Ganaste' ? 'text-green-400' : 'text-red-400'}`}>
+                                            <p className={`${endGame === 'Ganaste' ? 'text-green-400 font-medium' : 'text-red-400 font-medium'}`}>
                                                 {
-                                                    endGame === 'Ganaste' ? `Felicidades ${authState.user?.fullName || ''}, ganaste ` : `Perdiste ${authState.user?.fullName || ''}, vuelve a intentarlo`
+                                                    endGame === 'Ganaste' ? `FELICIDADES${authState.user?.fullName || ''}, GANASTE! ` : `PERDISTE${authState.user?.fullName || ''}, VUELVE A INTENTARLO.`
                                                 }
                                             </p>
                                         </div>
                                         <div className="actions flex items-center justify-between mt-6  border-t border-slate-600 pt-2">
-                                            <button className="px-3 py-1 bg-gradient-to-tl from-blue-500 to-red-400 rounded-full font-semibold"
+                                            <button className="px-3 py-1 bg-[#ffb13d] rounded-full font-semibold"
                                                 onClick={() => handleNewGame()}
                                             >
                                                 Jugar de nuevo
@@ -187,9 +187,9 @@ const Game = () => {
                             )
                         }
                         <div className="container mx-auto my-6 flex flex-col sm:flex-row gap-y-4">
-                            <div className="content mx-2 sm:w-[50%] flex items-center flex-col bg-slate-600   gap-4">
+                            <div className="content mx-2 sm:w-[50%] flex items-center flex-col bg-[#5a5c75]   gap-4">
                                 <div className='text-slate-400 w-full  font-semibold p-2 bg-slate-800 bg-gradient from-slate-700 to-slate-900 text-center text-lg '>
-                                    Fallos {game?.letrasErradas?.length}/{game?.MAX_INTENTOS}
+                                    FALLOS {game?.letrasErradas?.length}/{game?.MAX_INTENTOS}
                                 </div>
                                 <div className="person my-4 w-full min-h-[300px] relative">
 
@@ -223,16 +223,16 @@ const Game = () => {
                                 </div>
                             </div>
 
-                            <div className="right mx-2  bg-slate-700 flex-1  sm:w-[50%] flex flex-col ">
+                            <div className="right mx-2  bg-[#5a5c75] flex-1  sm:w-[50%] flex flex-col ">
                                 <div className='text-slate-400 w-full font-semibold p-2 bg-slate-800 bg-gradient from-slate-700 to-slate-900 text-center text-lg '>
-                                    Letras
+                                    LETRAS
                                 </div>
                                 <div className="letters flex items-center gap-4 flex-wrap p-4">
                                     {
                                         letters.map((letter, i) => (
                                             <button key={i}
                                                 disabled={game?.letrasErradas?.includes(letter.toLowerCase()) || game?.palabraUsuario?.includes(letter.toLowerCase())}
-                                                className={`w-12 h-12 rounded-full shadow flex items-center justify-center text-slate-300 border  border-slate-600   hover:bg-gray-800 ${game?.letrasErradas?.includes(letter.toLowerCase()) && 'bg-red-400 disabled:hover:bg-red-400 '}  ${game?.palabraUsuario?.includes(letter.toLowerCase()) && 'bg-green-400 disabled:hover:bg-green-400  text-slate-800'} `}
+                                                className={`w-12 h-12 rounded-full shadow flex items-center justify-center text-white font-semibold border border-slate-700 hover:bg-gray-700 ${game?.letrasErradas?.includes(letter.toLowerCase()) && 'bg-red-400 disabled:hover:bg-red-400 '}  ${game?.palabraUsuario?.includes(letter.toLowerCase()) && 'bg-green-400 disabled:hover:bg-green-400  text-slate-800'} `}
                                                 onClick={() => updateGame(letter.toLowerCase())}
                                             >
                                                 {letter}
@@ -244,14 +244,14 @@ const Game = () => {
                                     onClick={() => {
                                         if (game) { handleEndGame(game, 'Perdiste') }
                                     }}
-                                    className='hover:bg-red-500 hover:text-white duration-150 self-center px-3  py-1 rounded-full shadow-md text-slate-300 border border-dashed border-red-400'>Finalizar</button>
+                                    className='hover:bg-[#ffb13d] hover:text-white font-semibold duration-150 self-center px-3  py-1 rounded-full shadow-md text-slate-300 border border-[#d1b68d]'>FINALIZAR</button>
                             </div>
                         </div>
                         {
                             (playing && withTimer === 'Yes') && (
                                 <div className="timer text-slate-400 text-center my-6 flex items-center justify-center ">
                                     {/* <span>Te queda : </span> */}
-                                    <div className={`flex bg-slate-800 items-center justify-center text-3xl animate-ping duration-500 font-bold text-slate-400 text-center w-20 h-20 rounded-full shadow ${timeLeft <= 5 ? 'text-red-400' : '!text-green-400'} `}>
+                                    <div className={`flex bg-slate-800 items-center justify-center text-3xl animate-ping duration-500 font-bold text-slate-400 text-center w-20 h-20 rounded-full shadow ${timeLeft <= 5 ? 'text-red-300' : '!text-green-400'} `}>
                                         {timeLeft}
                                     </div>
                                 </div>
@@ -266,7 +266,7 @@ const Game = () => {
                                 !authState.token && (
                                     <div className='mb-6 text-sm text-red-300 border shadow border-dashed border-red-100 p-4 w-full'>
                                         No estás logueado, el resultado de este juego se perderá. Si deseas guardar tus puntuaciones, por favor <br />  <br />
-                                        <Link to="/sign-in" className='text-blue-400'>inicia sesión</Link>
+                                        <Link to="/sign-in" className='text-[#ffb13d] hover:text-[#ffcc80] font-bold text-lg flex items-center justify-center'>Inicia Sesión</Link>
                                     </div>
                                 )
                             }
@@ -289,27 +289,27 @@ const Game = () => {
                             </div>
                             <h1 className='title-form text-2xl sm:text-3xl'>Configurar jugada</h1>
                             <fieldset>
-                                <label htmlFor="Nivel" className='text-slate-400'>Nivel</label>
+                                <label htmlFor="Nivel" className='text-[#d1b68d] font-bold tracking-widest'>NIVEL</label>
                                 <select
                                     onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setLevel(e.target.value)}
                                     name="levels" id="levels"
-                                    className='bg-slate-900 text-slate-400'
+                                    className='bg-[#d1b68d] text-[#492d49] font-bold tracking-wider'
                                 >
-                                    <option value="facil">Facil</option>
-                                    <option value="medio">Medio</option>
-                                    <option value="dificil">Dificil</option>
+                                    <option value="facil" className='font-semibold text-white'>Fácil</option>
+                                    <option value="medio"  className='font-semibold text-white'>Medio</option>
+                                    <option value="dificil"  className='font-semibold text-white'>Difícil</option>
                                 </select>
                             </fieldset>
                             <fieldset>
-                                <label htmlFor="Nivel" className='text-slate-400'>Jugar con tiempo</label>
-                                <div className="flex items-center w-full justify-between  border0 border-slate-600 p-2 bg-slate-900">
-                                    <span className='flex items-center bg-red-3002 gap-1'>
-                                        <label htmlFor='timer'>Si</label>
-                                        <input type='radio' onChange={() => setWithTimer('Yes')} className='w-6 h-6' name='timer' value="yes" />
+                                <label htmlFor="Nivel" className='text-[#d1b68d] font-bold tracking-wider'>JUGAR CON TIEMPO</label>
+                                <div className="flex items-center w-full justify-between px-3 py-1 rounded bg-[#d1b68d] text-[#492d49]">
+                                    <span className='flex items-center gap-1 font-semibold'>
+                                        <label htmlFor='timer'>SI</label>
+                                        <input type='radio' onChange={() => setWithTimer('Yes')} className='w-5 h-5' name='timer' value="yes" />
                                     </span>
-                                    <span className='flex items-center bg-red-3003 gap-1'>
-                                        <label htmlFor='timer' >No</label>
-                                        <input type='radio' onChange={() => setWithTimer('No')} className='w-6 h-6' name='timer' value="No" />
+                                    <span className='flex items-center gap-1 font-semibold'>
+                                        <label htmlFor='timer'>NO</label>
+                                        <input type='radio' onChange={() => setWithTimer('No')} className='w-5 h-5' name='timer' value="No" />
                                     </span>
                                 </div>
                             </fieldset>
