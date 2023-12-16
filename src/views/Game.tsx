@@ -266,12 +266,12 @@ const Game = () => {
                                 !authState.token && (
                                     <div className='mb-6 text-sm text-red-300 border shadow border-dashed border-red-100 p-4 w-full'>
                                         No estás logueado, el resultado de este juego se perderá. Si deseas guardar tus puntuaciones, por favor <br />  <br />
-                                        <Link to="/sign-in" className='text-[#ffb13d] hover:text-[#ffcc80] font-bold text-lg flex items-center justify-center'>Inicia Sesión</Link>
+                                        <Link to="/sign-in" className='text-[#ffb13d] hover:text-[#ffcc80] font-bold text-lg flex items-center justify-center  animate-bounce'>Inicia Sesión</Link>
                                     </div>
                                 )
                             }
                             <div className='mb-6 text-sm  border shadow  border-green-100 p-4 w-full  border-dashed'>
-                                <div className='mb-4 text-lg font-bold text-yellow-600'>
+                                <div className='mb-4 text-lg font-bold flex items-center justify-center text-[#ffd596]'>
                                     !!! IMPORTANTE !!! <br />
                                 </div>
                                 <ul className='flex flex-col gap-2 list-decimal pl-6  text-yellow-300'>

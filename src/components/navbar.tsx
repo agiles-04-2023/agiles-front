@@ -16,7 +16,7 @@ const Navbar = () => {
                         <span className="text-[#d1b68d] flex items-center group relative bg-blue-400s py-4 px-4">
                             {authState.user?.photo ? (<img className="w-8 h-8 rounded-full shadow border border-slate-700 object-cover" src={authState.user?.photo} alt="" />) : (<DefaultAvatar />)}
                             <span className="ml-2 font-medium">{authState.user?.fullName}</span>
-                            <div className="absolute top-[60px] w-[200px]  flex-col justify-start shadow-md   bg-slate-800 right-0 w-full group-hover:flex hidden">
+                            <div className="absolute top-[60px] flex-col justify-start shadow-md   bg-slate-800 right-0 w-full group-hover:flex hidden">
                                 <button className=" text-left  text-red-400 p-2 hover:text-white hover:bg-red-400 duration-400" onClick={() => signOut()}>Cerrar sesión</button>
                             </div>
                         </span>
@@ -24,7 +24,7 @@ const Navbar = () => {
                 ) : (
                     <div className="p-4">
                         <Link to="/sign-in" className="btn btn-primary gradient !rounded-full">Inicia Sesión</Link>
-                        <Link to="/sign-up" className="btn !bg-transparent !text-[#d1b68d]">Crear Cuenta</Link>
+                        <Link to="/sign-up" className="btn !bg-transparent !text-[#ffb13d]">Crear Cuenta</Link>
                     </div>
                 )
                 }

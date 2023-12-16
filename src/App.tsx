@@ -40,9 +40,9 @@ function App() {
               <div className="flex flex-col mt-1">
                 <div className="overflow-x-auto">
                   <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-                    <h1 className='title-form text-2xl sm:text-4xl'>TOP 10 </h1>
-                    <span className='text-[#d1b68d] font-sans'> (Fácil)</span>
-                    <div className="shadow overflow-hidden sm:rounded-lg">
+                    <h1 className='title-form text-3xl font-sans'>TOP 10 </h1>
+                    <span className='text-[#d1b68d] font-sans font-medium'> (Fácil)</span>
+                    <div className="shadow rounded-lg overflow-hidden my-2">
                       <table className="min-w-full text-sm text-[#d1b68d]">
                         <thead className="bg-[#87555c] text-xs uppercase font-medium">
                           <tr>
@@ -70,7 +70,7 @@ function App() {
                             </th>
                           </tr>
                         </thead>
-                        <tbody className="bg-[#492d49]" id='table-dashboard'>
+                        <tbody className="bg-[#492d49] font-sans" id='table-dashboard'>
                           {faciles.map((game: IGame, index: number) => (
                             <tr key={game.id} className={`border-b border-slate-600 ${index % 2 === 0 && 'bg-black bg-opacity-20'}`}>
                               <td className="pl-4"> {game.id} </td>
@@ -134,9 +134,9 @@ function App() {
               <div className="flex flex-col mt-1">
                 <div className='overflow-x-auto'>
                   <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-                    <h1 className='title-form text-2xl sm:text-4xl'>TOP 10 </h1>
-                    <span className='text-[#d1b68d] font-sans'> (Medio)</span>
-                    <div className="shadow overflow-hidden sm:rounded-lg">
+                    <h1 className='title-form text-3xl font-sans'>TOP 10 </h1>
+                    <span className='text-[#d1b68d] font-sans font-medium'> (Medio)</span>
+                    <div className="shadow rounded-lg overflow-hidden my-2">
                       <table className="min-w-full text-sm text-[#d1b68d]">
                         <thead className="bg-[#87555c] text-xs uppercase font-medium">
                           <tr>
@@ -164,7 +164,7 @@ function App() {
                             </th>
                           </tr>
                         </thead>
-                        <tbody className="bg-[#492d49]" id='table-dashboard'>
+                        <tbody className="bg-[#492d49] font-sans" id='table-dashboard'>
                           {medios.map((game: IGame, index: number) => (
                             <tr key={game.id} className={`border-b border-slate-600 ${index % 2 === 0 && 'bg-black bg-opacity-20'}`}>
                               <td className="pl-4"> {game.id} </td>
@@ -228,9 +228,9 @@ function App() {
               <div className="flex flex-col mt-1">
                 <div className="overflow-x-auto">
                   <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-                    <h1 className='title-form text-2xl sm:text-4xl'>TOP 10 </h1>
-                    <span className='text-[#d1b68d] font-sans'> (Difícil)</span>
-                    <div className="shadow overflow-hidden sm:rounded-lg">
+                    <h1 className='title-form text-3xl font-sans'>TOP 10 </h1>
+                    <span className='text-[#d1b68d] font-sans font-medium'> (Difícil)</span>
+                    <div className="shadow rounded-lg overflow-hidden my-2">
                       <table className="min-w-full text-sm text-[#d1b68d]">
                         <thead className="bg-[#87555c] text-xs uppercase font-medium">
                           <tr>
@@ -258,7 +258,7 @@ function App() {
                             </th>
                           </tr>
                         </thead>
-                        <tbody className="bg-[#492d49]" id='table-dashboard'>
+                        <tbody className="bg-[#492d49] font-sans" id='table-dashboard'>
                           {dificiles.map((game: IGame, index: number) => (
                             <tr key={game.id} className={`border-b border-slate-600 ${index % 2 === 0 && 'bg-black bg-opacity-20'}`}>
                               <td className="pl-4"> {game.id} </td>
