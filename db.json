@@ -3,7 +3,7 @@
     {
       "email": "prod_dev@gmail.com",
       "password": "Test1234!",
-      "fullName": "JHMesserouxx",
+      "fullName": "JIPucheta",
       "photo": "",
       "id": 4
     },
@@ -11,7 +11,7 @@
       "email": "mhokamor@gmail.com",
       "password": "test1234",
       "fullName": "MHOK",
-      "photo": "https://res.cloudinary.com/draxircbk/image/upload/v1687141107/ATESPIEDSJESUS/USERS/jhmcode_2_admin.png",
+      "photo": "",
       "id": 5
     },
     {
@@ -102,7 +102,7 @@
         "t",
         "y"
       ],
-      "palabraAdivinar": "ivo",
+      "palabraAdivinar": "juanignacio",
       "allInputs": [
         "l",
         "u",
