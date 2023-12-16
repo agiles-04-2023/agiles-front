@@ -69,15 +69,10 @@ textarea {
 }
 
 .title-form {
-  /* font-size: 2rem; */
-  /* margin-bottom: 1rem; */
   text-transform: uppercase;
   font-weight: 900;
-  /* background-image: linear-gradient(to right, #6fb8d5, #287cb4);
-  background: linear-gradient(90deg, rgba(254, 98, 56, 1) 0%, rgba(253, 29, 29, 1) 52%, rgb(3, 100, 185) 90%);
-  */
-  background-color: #f16fa1;
-  background-image: linear-gradient(83deg, #8b55f5, #f16fa1);
+  background-color: #d1b68d;
+  background-image: linear-gradient(83deg, #ffd698, #c9c5c5);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -115,15 +110,17 @@ textarea {
 
 .bg-gradient {
   background-color: #f16fa1;
-  background-image: linear-gradient(83deg, #8b55f5, #f16fa1);
+  /* background-image: linear-gradient(83deg, #8b55f5, #f16fa1); */
+  background-image: linear-gradient(83deg, #ffc46c, #ffdca8);
   color: white;
 }
 .btn.sec {
   border: 0.4px solid rgba(0, 0, 0, 0.086);
 }
 .btn.gradient {
-  background-color: #f16fa1;
-  background-image: linear-gradient(83deg, #8b55f5, #f16fa1);
+  /* background-color: #f16fa1; */
+  /* background-image: linear-gradient(83deg, #8b55f5, #f16fa1); */
+  background-image: linear-gradient(83deg, #ffc46c, #ffdca8);
   color: white;
 }
 .btn:hover,

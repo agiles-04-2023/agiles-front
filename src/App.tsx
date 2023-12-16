@@ -33,25 +33,25 @@ function App() {
   return (
     <div className='min-h-screen flex flex-col justify-between'>
       <Navbar />
-      <div className="px-4 ">
+      <div className="px-4 bg-[#51445f]">
         {
           faciles.length > 0 && (
             <div className="my-games   mx-auto my-7">
               <div className="flex flex-col mt-1">
                 <div className="overflow-x-auto">
                   <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-                    <h1 className='title-form text-2xl sm:text-4xl'>TOP 10</h1>
-                    <span className='text-slate-400'>(Facil)</span>
+                    <h1 className='title-form text-2xl sm:text-4xl'>TOP 10 </h1>
+                    <span className='text-[#d1b68d] font-sans'> (Fácil)</span>
                     <div className="shadow overflow-hidden sm:rounded-lg">
-                      <table className="min-w-full text-sm text-gray-400">
-                        <thead className="bg-gray-800 text-xs uppercase font-medium">
+                      <table className="min-w-full text-sm text-[#d1b68d]">
+                        <thead className="bg-[#87555c] text-xs uppercase font-medium">
                           <tr>
                             <th></th>
                             <th scope="col" className="px-2 w-40 py-3 text-left tracking-wider">
                               JUGADOR
                             </th>
                             <th scope="col" className="px-2 py-3 text-left tracking-wider">
-                              Pal. Adv.
+                              PAL. ADV.
                             </th>
                             <th scope="col" className="px-2 py-3 text-left tracking-wider">
                               ESTADO
@@ -70,7 +70,7 @@ function App() {
                             </th>
                           </tr>
                         </thead>
-                        <tbody className="bg-gray-800" id='table-dashboard'>
+                        <tbody className="bg-[#492d49]" id='table-dashboard'>
                           {faciles.map((game: IGame, index: number) => (
                             <tr key={game.id} className={`border-b border-slate-600 ${index % 2 === 0 && 'bg-black bg-opacity-20'}`}>
                               <td className="pl-4"> {game.id} </td>
@@ -130,15 +130,15 @@ function App() {
 
         {
           medios.length > 0 && (
-            <div className="my-games   mx-auto my-7">
+            <div className="my-games mx-auto my-7">
               <div className="flex flex-col mt-1">
                 <div className='overflow-x-auto'>
                   <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-                    <h1 className='title-form text-2xl sm:text-4xl'>TOP 10</h1>
-                    <span className='text-slate-400'>(Medio)</span>
+                    <h1 className='title-form text-2xl sm:text-4xl'>TOP 10 </h1>
+                    <span className='text-[#d1b68d] font-sans'> (Medio)</span>
                     <div className="shadow overflow-hidden sm:rounded-lg">
-                      <table className="min-w-full text-sm text-gray-400">
-                        <thead className="bg-gray-800 text-xs uppercase font-medium">
+                      <table className="min-w-full text-sm text-[#d1b68d]">
+                        <thead className="bg-[#87555c] text-xs uppercase font-medium">
                           <tr>
                             <th></th>
                             <th scope="col" className="px-2 w-40 py-3 text-left tracking-wider">
@@ -164,7 +164,7 @@ function App() {
                             </th>
                           </tr>
                         </thead>
-                        <tbody className="bg-gray-800" id='table-dashboard'>
+                        <tbody className="bg-[#492d49]" id='table-dashboard'>
                           {medios.map((game: IGame, index: number) => (
                             <tr key={game.id} className={`border-b border-slate-600 ${index % 2 === 0 && 'bg-black bg-opacity-20'}`}>
                               <td className="pl-4"> {game.id} </td>
@@ -228,11 +228,11 @@ function App() {
               <div className="flex flex-col mt-1">
                 <div className="overflow-x-auto">
                   <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-                    <h1 className='title-form text-2xl sm:text-4xl'>TOP 10</h1>
-                    <span className='text-slate-400'>(Dificil)</span>
+                    <h1 className='title-form text-2xl sm:text-4xl'>TOP 10 </h1>
+                    <span className='text-[#d1b68d] font-sans'> (Difícil)</span>
                     <div className="shadow overflow-hidden sm:rounded-lg">
-                      <table className="min-w-full text-sm text-gray-400">
-                        <thead className="bg-gray-800 text-xs uppercase font-medium">
+                      <table className="min-w-full text-sm text-[#d1b68d]">
+                        <thead className="bg-[#87555c] text-xs uppercase font-medium">
                           <tr>
                             <th></th>
                             <th scope="col" className="px-2 w-40 py-3 text-left tracking-wider">
@@ -258,7 +258,7 @@ function App() {
                             </th>
                           </tr>
                         </thead>
-                        <tbody className="bg-gray-800" id='table-dashboard'>
+                        <tbody className="bg-[#492d49]" id='table-dashboard'>
                           {dificiles.map((game: IGame, index: number) => (
                             <tr key={game.id} className={`border-b border-slate-600 ${index % 2 === 0 && 'bg-black bg-opacity-20'}`}>
                               <td className="pl-4"> {game.id} </td>
