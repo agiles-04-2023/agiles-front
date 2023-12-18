@@ -20,6 +20,13 @@
       "fullName": "Test",
       "photo": "",
       "id": 6
+    },
+    {
+      "email": "luchito.rc4@outlook.com",
+      "password": "asd123",
+      "fullName": "Luciano Jose Ragusa",
+      "photo": "",
+      "id": 7
     }
   ],
   "games": [
