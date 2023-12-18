@@ -39,6 +39,7 @@ jobs:
             git pull
             yarn
             yarn buildActions 
+            rm -r /var/www/test/*
             cp -r /root/Lucho/GitHub/Agiles/agiles-front/dist/* /var/www/test
 
 # Saco este test por ahora  yarn test:e2e
