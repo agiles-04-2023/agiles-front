@@ -31,11 +31,10 @@ const SignIn = () => {
     if (!ok) return false
     setLoading(true);
     try {
-      const r = await http.post(`/users/signin`, { ...values });
-      if (r.data.ok) {
+      const r = await http.get(`/users?email=${values.email}&password=${values.password}`);
+      if (r.data[0]) {
         signIn({
-          user: r.data.user,
-          token: r.data.token
+          user: r.data[0]
         });
         reset();
         setLoading(false);

@@ -27,6 +27,13 @@
       "fullName": "Luciano Jose Ragusa",
       "photo": "",
       "id": 7
+    },
+    {
+      "email": "test@test.com",
+      "password": "asd123",
+      "fullName": "Luciano Jose Ragusa",
+      "photo": "",
+      "id": 8
     }
   ],
   "games": [
@@ -634,6 +641,32 @@
       "withTimer": false,
       "date": "2023-07-17T20:36:41.644Z",
       "id": 16
+    },
+    {
+      "MAX_INTENTOS": 8,
+      "TIMER": 60,
+      "nivel": "facil",
+      "intentos": 8,
+      "palabraUsuario": [
+        "f",
+        "l",
+        "o",
+        "r"
+      ],
+      "letrasErradas": [],
+      "palabraAdivinar": "flor",
+      "allInputs": [
+        "f",
+        "l",
+        "o",
+        "r"
+      ],
+      "UserId": 6,
+      "finalState": "Ganaste",
+      "time": 60,
+      "withTimer": false,
+      "date": "2023-12-18T19:23:31.858Z",
+      "id": 17
     }
   ]
 }

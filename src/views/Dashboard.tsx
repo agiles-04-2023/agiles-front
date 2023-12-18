@@ -12,7 +12,7 @@ export interface IUser {
     fullName: string,
     email: string,
     password: string,
-    photo: string,
+    // photo: string,
     createdAt: string,
 
 }
@@ -41,7 +41,7 @@ const Dashboard = () => {
     const getMyGames = useCallback(
         async () => {
             const res = await http.get(`/games?UserId=${user?.id}`)
-            setMyGames(res.data.data)
+            setMyGames(res.data)
         },
         [user?.id],
     )
@@ -115,10 +115,10 @@ const Dashboard = () => {
                                                 {myGames.map((game: IGame, index: number) => (
                                                     <tr key={game.id} className={`border-b border-slate-600 ${index % 2 === 0 && 'bg-black bg-opacity-20'}`}>
                                                         <td className="pl-4"> {game.id} </td>
-                                                        <td className="px-2 py-1 w-fit flex top-[6px] relative  items-center   h-full whitespace-nowrap">
+                                                        {/* <td className="px-2 py-1 w-fit flex top-[6px] relative  items-center   h-full whitespace-nowrap">
                                                             {game.User.photo ? (<img className="w-8 h-8 rounded-full shadow border border-slate-700 object-cover" src={game.User.photo} alt="" />) : (<DefaultAvatar />)}
                                                             <span className="ml-2 font-medium">{game.User.fullName}</span>
-                                                        </td>
+                                                        </td> */}
                                                         <td className="px-2 py-1  whitespace-nowrap"> {formatDate(game.date)} </td>
                                                         <td className="px-2 py-1  whitespace-nowrap"> {game.palabraAdivinar} </td>
                                                         <td className={`px-2 py-1 whitespace-nowrap ${game.finalState !== 'Ganaste' ? 'text-red-400' : 'text-green-400'} `}>
