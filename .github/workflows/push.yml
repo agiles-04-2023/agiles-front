@@ -18,14 +18,14 @@ jobs:
       - run: npm install --no-audit --no-optional --no-fund
       - name : Ejecutar ESLINT para ver errores de codigo...
         run: yarn lint
-      # - name : Punto 3 - Compilar el proyecto...
-      #   run: yarn buildActions
+      - name : Punto 3 - Compilar el proyecto...
+        run: yarn buildActions
       - name : Punto 4 - Ejecutar los Unit Test...
         run: |
           yarn test
-      # - name : Punto 5 - Code coverage...
-      #   run: |
-      #     yarn coverage
+      - name : Punto 5 - Code coverage...
+        run: |
+          yarn coverage
       - name: Punto 7 - Deploy en el servidor...
         uses: appleboy/ssh-action@master
         with:
@@ -40,6 +40,5 @@ jobs:
             yarn
             yarn buildActions 
             cp -r /root/Lucho/GitHub/Agiles/agiles-front/dist/* /var/www/test
-
 
 # Saco este test por ahora  yarn test:e2e
