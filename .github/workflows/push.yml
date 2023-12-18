@@ -31,10 +31,11 @@ jobs:
           port: 22
           script: |
             cd /root/Lucho/GitHub/Agiles/agiles-front
+            git restore .
             git pull
             yarn
             yarn buildActions 
             cp -r /root/Lucho/GitHub/Agiles/agiles-front/dist/* /var/www/test
 
-            
+
 # Saco este test por ahora  yarn test:e2e
