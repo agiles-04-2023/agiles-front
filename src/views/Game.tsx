@@ -166,7 +166,7 @@ const Game = () => {
                                             {/* <p>Some text in the Modal Body</p> */}
                                             <p className={`${endGame === 'Ganaste' ? 'text-green-400 font-medium' : 'text-red-400 font-medium'}`}>
                                                 {
-                                                    endGame === 'Ganaste' ? `FELICIDADES${authState.user?.fullName || ''}, GANASTE! ` : `PERDISTE${authState.user?.fullName || ''}, VUELVE A INTENTARLO.`
+                                                    endGame === 'Ganaste' ? `FELICIDADES ${authState.user?.fullName || ''}, GANASTE! ` : `PERDISTE${authState.user?.fullName || ''}, VUELVE A INTENTARLO.`
                                                 }
                                             </p>
                                         </div>

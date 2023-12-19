@@ -74,6 +74,9 @@ export const AuthProvider = ({ children }: any) => {
           user: data.user,
         },
       });
+      
+      window.location.href = '/';
+      
       dispatch({ type: 'removeMessage' })
     } catch (error) {
       console.log(error)

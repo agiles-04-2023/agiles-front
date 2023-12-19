@@ -4,7 +4,8 @@ import Footer from './components/Footer'
 import Navbar from './components/navbar'
 import http from './api/axios'
 import { IGame } from './views/Dashboard'
-import DefaultAvatar from './components/DefaultAvatar'
+// import DefaultAvatar from './components/DefaultAvatar'
+import photoAhorcado from './assets/ahorcadoPhoto.png'
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
     }).catch(err => console.log(err))
 
   }, [])
+
 
   return (
     <div className='min-h-screen flex flex-col justify-between'>
@@ -70,13 +72,17 @@ function App() {
                             </th>
                           </tr>
                         </thead>
-                        <tbody className="bg-[#492d49] font-sans" id='table-dashboard'>
+                        <tbody className="bg-[#492d49] font-sans font-semibold" id='table-dashboard'>
                           {faciles.map((game: IGame, index: number) => (
                             <tr key={game.id} className={`border-b border-slate-600 ${index % 2 === 0 && 'bg-black bg-opacity-20'}`}>
                               <td className="pl-4"> {game.id} </td>
                               <td className="px-2 py-1 w-fit flex top-[6px] relative  items-center   h-full whitespace-nowrap">
-                                {game.User?.photo ? (<img className="w-8 h-8 rounded-full shadow border border-slate-700 object-cover" src={game.User.photo} alt="" />) : (<DefaultAvatar />)}
-                                <span className="ml-2 font-medium">{game.User?.fullName || 'Desconocido'}</span>
+                                {/* {game.User?.photo ? (<img className="w-8 h-8 rounded-full shadow border border-slate-700 object-cover" src={photoAhorcado} alt="" />) : (<DefaultAvatar />)} */}
+                                <img className="w-8 h-8 rounded-full shadow border border-slate-700 object-cover" src={photoAhorcado} alt="" />
+                                <span className="ml-2 font-medium">
+                                  {game.User?.fullName || 'Desconocido'}
+                                </span>
+
                               </td>
                               <td className="px-2 py-1  whitespace-nowrap"> {game.palabraAdivinar} </td>
                               <td className={`px-2 py-1 whitespace-nowrap ${game.finalState !== 'Ganaste' ? 'text-red-400' : 'text-green-400'} `}>
@@ -169,7 +175,8 @@ function App() {
                             <tr key={game.id} className={`border-b border-slate-600 ${index % 2 === 0 && 'bg-black bg-opacity-20'}`}>
                               <td className="pl-4"> {game.id} </td>
                               <td className="px-2 py-1 w-fit flex top-[6px] relative  items-center   h-full whitespace-nowrap">
-                                {game.User?.photo ? (<img className="w-8 h-8 rounded-full shadow border border-slate-700 object-cover" src={game.User.photo} alt="" />) : (<DefaultAvatar />)}
+                                {/* {game.User?.photo ? (<img className="w-8 h-8 rounded-full shadow border border-slate-700 object-cover" src={photoAhorcado} alt="" />) : (<DefaultAvatar />)} */}
+                                <img className="w-8 h-8 rounded-full shadow border border-slate-700 object-cover" src={photoAhorcado} alt="" />
                                 <span className="ml-2 font-medium">{game.User?.fullName || 'Desconocido'}</span>
                               </td>
                               <td className="px-2 py-1  whitespace-nowrap"> {game.palabraAdivinar} </td>
@@ -263,7 +270,8 @@ function App() {
                             <tr key={game.id} className={`border-b border-slate-600 ${index % 2 === 0 && 'bg-black bg-opacity-20'}`}>
                               <td className="pl-4"> {game.id} </td>
                               <td className="px-2 py-1 w-fit flex top-[6px] relative  items-center   h-full whitespace-nowrap">
-                                {game.User?.photo ? (<img className="w-8 h-8 rounded-full shadow border border-slate-700 object-cover" src={game.User.photo} alt="" />) : (<DefaultAvatar />)}
+                                {/* {game.User?.photo ? (<img className="w-8 h-8 rounded-full shadow border border-slate-700 object-cover" src={photoAhorcado} alt="" />) : (<DefaultAvatar />)} */}
+                                <img className="w-8 h-8 rounded-full shadow border border-slate-700 object-cover" src={photoAhorcado} alt="" />
                                 <span className="ml-2 font-medium">{game.User?.fullName || 'Desconocido'}</span>
                               </td>
                               <td className="px-2 py-1  whitespace-nowrap"> {game.palabraAdivinar} </td>

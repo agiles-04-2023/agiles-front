@@ -10,9 +10,11 @@ import CustomInput from "../../components/CustomInput";
 import FormError from "../../components/FormError";
 import InlineDots from "../../components/loadings/Inlinedots";
 import { validateForm } from "../../helpers/form";
+import { useNavigate } from 'react-router-dom';
 
 const SignIn = () => {
 
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState<any>();
   const [loginError, setLoginError] = useState<string | null>(null);
@@ -35,7 +37,7 @@ const SignIn = () => {
       if (r.data[0]) {
         signIn({
           user: r.data[0]
-        });
+        })
         reset();
         setLoading(false);
       } else {
@@ -99,15 +101,17 @@ const SignIn = () => {
             <button
               id="sign-up"
               disabled={loading}
-              className="btn gradient" type="submit">
+              className="btn gradient" type="submit"
+              //! onClick={() => navigate('/')}
+            >
               {loading ? (
                 <div className="flex items-center gap-4">
                   <span>Espere</span>
                   <InlineDots />
                 </div>
               ) : (
-                <span>Inicia Sesión</span>
-              )}
+                  <span>Inicia Sesión</span>
+                )}
             </button>
           </fieldset>
 
