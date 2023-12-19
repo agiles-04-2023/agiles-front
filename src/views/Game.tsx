@@ -186,7 +186,7 @@ const Game = () => {
                                 </div>
                             )
                         }
-                        <div id='gameCard' className="container mx-auto my-6 flex flex-col sm:flex-row gap-y-4">
+                        <div className="container mx-auto my-6 flex flex-col sm:flex-row gap-y-4">
                             <div className="content mx-2 sm:w-[50%] flex items-center flex-col bg-[#5a5c75]   gap-4">
                                 <div className='text-slate-400 w-full  font-semibold p-2 bg-slate-800 bg-gradient from-slate-700 to-slate-900 text-center text-lg '>
                                     FALLOS {game?.letrasErradas?.length}/{game?.MAX_INTENTOS}
@@ -260,7 +260,7 @@ const Game = () => {
                     </>
 
                 ) : (
-                    <div className="flex flex-col items-center justify-center h-full mx-2 sm:mx-0 my-8">
+                    <div id='configCard' className="flex flex-col items-center justify-center h-full mx-2 sm:mx-0 my-8">
                         <Box className="levels w-full sm:w-[450px]">
                             {
                                 !authState.token && (
@@ -287,7 +287,7 @@ const Game = () => {
                                 </ul>
 
                             </div>
-                            <h1 className='title-form text-2xl sm:text-3xl'>Configurar jugada</h1>
+                            <h1 id='configCard' className='title-form text-2xl sm:text-3xl'>Configurar jugada</h1>
                             <fieldset>
                                 <label htmlFor="Nivel" className='text-[#d1b68d] font-bold tracking-widest'>NIVEL</label>
                                 <select
