@@ -16,6 +16,7 @@ function App() {
 
   useEffect(() => {
     http.get(`/games?nivel=facil&finalState=Ganaste&sort=intentos,time`).then(res => {
+      console.log(res.data)
       setFaciles(res.data)
     }).catch(err => {
       console.log(err)
