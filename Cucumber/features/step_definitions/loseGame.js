@@ -75,7 +75,7 @@ Then('I click on the Finalizar button', async function () {
 });
 
 Then('I should see the losePage', async function () {
-  let responseCard = Selector('#modalEndGame').with({ boundTestRun: testController });
+  let responseCard = Selector('#endGameText').with({ boundTestRun: testController });
   await testController.expect(responseCard.exists).ok();
 });
 
