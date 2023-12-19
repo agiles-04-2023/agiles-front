@@ -33,10 +33,13 @@ const SignIn = () => {
     if (!ok) return false
     setLoading(true);
     try {
-      const r = await http.get(`/users?email=${values.email}&password=${values.password}`);
-      if (r.data[0]) {
+      // const r = await http.get(`/users?email=${values.email}&password=${values.password}`);
+      // if (r.data[0]) {
+      const r = await http.post(`/users/signin`, { ...values });
+      if (r.data.ok) {
         signIn({
-          user: r.data[0]
+          user: r.data.user,
+          token: r.data.token
         })
         reset();
         setLoading(false);

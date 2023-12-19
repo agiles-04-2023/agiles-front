@@ -44,7 +44,8 @@ const Dashboard = () => {
         async () => {
             const res = await http.get(`/games?id=${user?.id}`)
             // const res = await http.get(`/users?id=${userId}`);
-            setMyGames(res.data)
+            // setMyGames(res.data) // Esto es para la db de .json
+            setMyGames(res.data.data)
         },
         [user?.id],
     )

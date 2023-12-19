@@ -16,18 +16,20 @@ function App() {
 
   useEffect(() => {
     http.get(`/games?nivel=facil&finalState=Ganaste&sort=intentos,time`).then(res => {
-      console.log(res.data)
-      setFaciles(res.data)
+      // setFaciles(res.data)
+      setFaciles(res.data.data)
     }).catch(err => {
       console.log(err)
     })
 
     http.get(`/games?nivel=medio&finalState=Ganaste&sort=intentos`).then(res => {
-      setMedios(res.data)
+      // setMedios(res.data)
+      setMedios(res.data.data)
     }).catch(err => console.log(err))
 
     http.get(`/games?nivel=dificil&finalState=Ganaste&sort=intentos`).then(res => {
-      setDificiles(res.data)
+      // setDificiles(res.data)
+      setDificiles(res.data.data)
     }).catch(err => console.log(err))
 
   }, [])
