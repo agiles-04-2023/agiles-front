@@ -78,19 +78,9 @@ Then('I should see the losePage', async function () {
   let modal = Selector('#modalEndGame').with({ boundTestRun: testController });
   await testController.expect(modal.exists).ok();
 
-
-  // // Utiliza un selector más simple
-  // const modalSelector = Selector('div.modal-body p');
-
-  // // Utiliza el selector directamente en la aserción
-  // await testController.expect(modalSelector.exists).ok();
-
-  // // Obtiene el texto del modal utilizando el mismo selector
-  // const modalValue = await modalSelector.innerText;
-
-  // // Verifica el valor del modal
-  // await testController.expect(modalValue).contains('PERDISTE, VUELVE A INTENTARLO.');
+  // Obtiene el texto del modal utilizando el mismo selector
+  const modalValue = await modal.innerText;
+  // Verifica el valor del modal
+  await testController.expect(modalValue).contains('PERDISTE, VUELVE A INTENTARLO.');
 });
-
-// Para ver si entro, revisa si existe una card con el id response-card
 
