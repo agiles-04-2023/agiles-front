@@ -11,8 +11,8 @@ When('I click on the Game button', async function () {
   await testController.click(button);
 });
 
-Then('I should see the game page', async function (password) {
-  let responseCard = Selector('#box-app').with({ boundTestRun: testController });
+Then('I should see the config page', async function () {
+  let responseCard = Selector('#configCard').with({ boundTestRun: testController });
   await testController.expect(responseCard.exists).ok();
 });
 
@@ -29,6 +29,6 @@ When('I click on the Start Game button', async function () {
 // Para ver si entro, revisa si existe una card con el id response-card
 
 Then('I should see the game page', async function () {
-  let responseCard = Selector('gameCard').with({ boundTestRun: testController });
+  let responseCard = Selector('#gameCard').with({ boundTestRun: testController });
   await testController.expect(responseCard.exists).ok();
 });
