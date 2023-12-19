@@ -3,7 +3,7 @@ Feature: Login
 
   Scenario: Login with valid credentials
     Given I open the login page
-    When I enter the email "test@test.com"
-    And I enter the password "test1234"
+    When I enter the email "test@gmail.com"
+    And I enter the password "test123"
     And I click the login button
     Then I should be logged in
