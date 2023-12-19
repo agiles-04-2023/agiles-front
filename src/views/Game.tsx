@@ -158,9 +158,9 @@ const Game = () => {
                         {
                             endGame !== '' && (
                                 <div className="modal absolute w-screen h-screen  flex items-center justify-center bg-black/40 text-white z-30">
-                                    <div className="modal-content w-[90%] mx-8 sm:mx-0 sm:w-[350px] bg-[#5a5c75] p-4 shadow rounded">
+                                    <div id='modalEndGame' className="modal-content w-[90%] mx-8 sm:mx-0 sm:w-[350px] bg-[#5a5c75] p-4 shadow rounded">
                                         <div className="modal-header mb-4 border-b border-slate-600 pb-2">
-                                            <h2 className='text-2xl font-meduim font-semibold'>FIN DEL JUEGO</h2>
+                                            <h2  className='text-2xl font-meduim font-semibold'>FIN DEL JUEGO</h2>
                                         </div>
                                         <div className="modal-body">
                                             {/* <p>Some text in the Modal Body</p> */}
@@ -241,6 +241,7 @@ const Game = () => {
                                     }
                                 </div>
                                 <button
+                                    id='endGame'
                                     onClick={() => {
                                         if (game) { handleEndGame(game, 'Perdiste') }
                                     }}
