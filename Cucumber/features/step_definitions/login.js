@@ -16,7 +16,7 @@ When('I enter the password {string}', async function (password) {
   await testController.typeText(input, password);
 });
 
-When('I click the login button', async function () {
+When('I click the sign-in button', async function () {
   let button = Selector('#sign-in').with({ boundTestRun: testController });
   await testController.click(button);
 });

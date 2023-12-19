@@ -5,5 +5,5 @@ Feature: Login
     Given I open the login page
     When I enter the email "test@gmail.com"
     And I enter the password "test123"
-    And I click the login button
+    And I click the sign-in button
     Then I should be logged in

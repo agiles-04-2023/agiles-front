@@ -186,7 +186,7 @@ const Game = () => {
                                 </div>
                             )
                         }
-                        <div className="container mx-auto my-6 flex flex-col sm:flex-row gap-y-4">
+                        <div id='gameCard' className="container mx-auto my-6 flex flex-col sm:flex-row gap-y-4">
                             <div className="content mx-2 sm:w-[50%] flex items-center flex-col bg-[#5a5c75]   gap-4">
                                 <div className='text-slate-400 w-full  font-semibold p-2 bg-slate-800 bg-gradient from-slate-700 to-slate-900 text-center text-lg '>
                                     FALLOS {game?.letrasErradas?.length}/{game?.MAX_INTENTOS}
@@ -309,7 +309,7 @@ const Game = () => {
                                     </span>
                                     <span className='flex items-center gap-1 font-semibold'>
                                         <label htmlFor='timer'>NO</label>
-                                        <input type='radio' onChange={() => setWithTimer('No')} className='w-5 h-5' name='timer' value="No" />
+                                        <input id='radioNO' type='radio' onChange={() => setWithTimer('No')} className='w-5 h-5' name='timer' value="No" />
                                     </span>
                                 </div>
                             </fieldset>
@@ -318,6 +318,7 @@ const Game = () => {
                                 <button disabled={false}
                                     className='btn gradient'
                                     type='submit'
+                                    id='startGame'
                                     onClick={() => handleStartGame()}
                                 >
                                     {loadingStartingGame ? ('Iniciando juego...') : 'Iniciar juego'}

@@ -9,7 +9,7 @@ const Navbar = () => {
         <header className='bg-[#5a5c75] font-sans px-2 text-center text-[#d1b68d] gap-4 flex items-center justify-between flex-wrap'>
             <Link to='/' className='text-2xl px-10 font-bold font-sans title-form'>AHORCADO</Link>
             <nav className="left-Navbar flex items-center justify-center gap-4">
-                <Link to="/game" className="title-form hover:text-[#d1b68d] duration-300 text-xl">JUGAR</Link>
+                <Link to="/game" id="gameButton" className="title-form hover:text-[#d1b68d] duration-300 text-xl">JUGAR</Link>
                 {authState.token ? (
                     <div className="flex flex-wrap items-center gap-4">
                         <Link to="/dashboard" className="text-[#d1b68d] hover:text-[#d1b68d] duration-300">Dashboard</Link>
@@ -17,13 +17,13 @@ const Navbar = () => {
                             {authState.user?.photo ? (<img className="w-8 h-8 rounded-full shadow border border-slate-700 object-cover" src={authState.user?.photo} alt="" />) : (<DefaultAvatar />)}
                             <span id="userName" className="ml-2 font-medium">{authState.user?.fullName}</span>
                             <div className="absolute top-[60px] flex-col justify-start shadow-md   bg-slate-800 right-0 w-full group-hover:flex hidden">
-                                <button className=" text-left  text-red-400 p-2 hover:text-white hover:bg-red-400 duration-400" onClick={() => signOut()}>Cerrar sesión</button>
+                                <button id="logout" className=" text-left  text-red-400 p-2 hover:text-white hover:bg-red-400 duration-400" onClick={() => signOut()}>Cerrar sesión</button>
                             </div>
                         </span>
                     </div>
                 ) : (
                     <div className="p-4">
-                        <Link to="/sign-in" className="btn btn-primary gradient !rounded-full">Inicia Sesión</Link>
+                        <Link to="/sign-in" id="signin" className="btn btn-primary gradient !rounded-full">Inicia Sesión</Link>
                         <Link to="/sign-up" className="btn !bg-transparent !text-[#ffb13d]">Crear Cuenta</Link>
                     </div>
                 )

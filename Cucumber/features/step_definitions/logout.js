@@ -20,7 +20,7 @@ When('I click on the logout button', async function () {
   await testController.click(logoutBtn);
 });
 
-When('I click the login button', async function () {
+Then('I click the login button', async function () {
   let button = Selector('#sign-in').with({ boundTestRun: testController });
   await testController.click(button);
 });
