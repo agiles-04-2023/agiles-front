@@ -16,6 +16,13 @@ Then('I should see the config page', async function () {
   await testController.expect(responseCard.exists).ok();
 });
 
+When('I select difficulty level', async function () {
+  let button = Selector('#levels').with({ boundTestRun: testController });
+  await testController.click(button);
+  let option = Selector('#levels > option:nth-child(2)').with({ boundTestRun: testController });
+  await testController.click(option);
+});
+
 When('I click on the NO button', async function () {
   let button = Selector('#radioNO').with({ boundTestRun: testController });
   await testController.click(button);
