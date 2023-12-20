@@ -26,6 +26,9 @@ jobs:
       - name : Punto 5 - Code coverage...
         run: |
           yarn coverage
+      - name : Punto 6 - Ejecutar los AT...
+        run: |
+          yarn test:e2e
       - name: Punto 7 - Deploy en el servidor...
         uses: appleboy/ssh-action@master
         with:
