@@ -1,10 +1,10 @@
 describe('Ejecutar juego', () => {
   it('Perder por errores', () => {
     cy.visit('/')
-    cy.contains('Jugar').click()
+    cy.contains('JUGAR').click()
     cy.url().should('include', '/game')
-    cy.get('#levels').select('Facil')
-    cy.get('.bg-red-3003 > .w-6').click()
+    cy.get('#levels').select('facil')
+    // cy.get('.bg-red-3003 > .w-6').click()
     cy.contains('Iniciar juego').click()
     cy.get('.letters > :nth-child(1)').click()
     cy.get('.letters > :nth-child(2)').click()
@@ -14,6 +14,6 @@ describe('Ejecutar juego', () => {
     cy.get('.letters > :nth-child(7)').click()
     cy.get('.letters > :nth-child(8)').click()
     cy.get('.letters > :nth-child(9)').click()
-    cy.contains('Perdiste , vuelve a intentarlo')
+    cy.contains('PERDISTE')
   })
 })

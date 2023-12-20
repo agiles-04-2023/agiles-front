@@ -166,7 +166,7 @@ const Game = () => {
                                             {/* <p>Some text in the Modal Body</p> */}
                                             <p className={`${endGame === 'Ganaste' ? 'text-green-400 font-medium' : 'text-red-400 font-medium'}`}>
                                                 {
-                                                    endGame === 'Ganaste' ? `FELICIDADES ${authState.user?.fullName || ''}, GANASTE! ` : `PERDISTE${authState.user?.fullName || ''}, VUELVE A INTENTARLO.`
+                                                    endGame === 'Ganaste' ? `FELICIDADES ${authState.user?.fullName || ''}, GANASTE ` : `PERDISTE ${authState.user?.fullName || ''}, VUELVE A INTENTARLO`
                                                 }
                                             </p>
                                         </div>
@@ -296,9 +296,9 @@ const Game = () => {
                                     name="levels" id="levels"
                                     className='bg-[#d1b68d] text-[#492d49] font-bold tracking-wider'
                                 >
-                                    <option value="facil" className='font-semibold text-white'>Fácil</option>
+                                    <option value="facil" className='font-semibold text-white'>Facil</option>
                                     <option value="medio"  className='font-semibold text-white'>Medio</option>
-                                    <option value="dificil"  className='font-semibold text-white'>Difícil</option>
+                                    <option value="dificil"  className='font-semibold text-white'>Dificil</option>
                                 </select>
                             </fieldset>
                             <fieldset>
@@ -306,7 +306,7 @@ const Game = () => {
                                 <div className="flex items-center w-full justify-between px-3 py-1 rounded bg-[#d1b68d] text-[#492d49]">
                                     <span className='flex items-center gap-1 font-semibold'>
                                         <label htmlFor='timer'>SI</label>
-                                        <input type='radio' onChange={() => setWithTimer('Yes')} className='w-5 h-5' name='timer' value="yes" />
+                                        <input id='radioSI' type='radio' onChange={() => setWithTimer('Yes')} className='w-5 h-5' name='timer' value="yes" />
                                     </span>
                                     <span className='flex items-center gap-1 font-semibold'>
                                         <label htmlFor='timer'>NO</label>
