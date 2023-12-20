@@ -23,7 +23,7 @@
   "dependencies": {
     "base64-img": "^1.0.4",
     "cucumber": "^5.1.0",
-    "eslint": "^4.19.1",
+    "eslint": "^8.56.0",
     "npm": "^10.2.5",
     "testcafe": "^3.4.0"
   },
