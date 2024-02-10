@@ -1,7 +1,7 @@
 describe('Ejecutar juego', () => {
   it('Iniciar juego', () => {
     cy.visit('/')
-    cy.contains('JUGAR').click()
+    cy.contains('hola').click()
     cy.url().should('include', '/game')
     cy.get('#levels').select('medio')
     // cy.get('.bg-red-3003 > .w-6').click()
